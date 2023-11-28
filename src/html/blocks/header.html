@@ -1,5 +1,18 @@
 <header class="header">
-	<div class="container">
-		<h2 class="logo">Logo</h2>
+	<div class="header__logo">
+		<img src="./img/Group.svg" alt="">
+	</div>
+	<div class="header__nav">
+		<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+		<ul class="header__ul" id="headerUl">
+			<li class="header__li"><a class="header__a" href="/">Home</a></li>
+			<li class="header__li"><a class="header__a" href="/">About</a></li>
+			<li class="header__li"><a class="header__a" href="/">Pages</a></li>
+			<li class="header__li"><a class="header__a" href="/">Services</a></li>
+			<li class="header__li"><a class="header__a" href="/">Cart 0</a></li>
+			<li class="header__li"><a class="btn__primary">Get Started</a></li>
+			<span class="material-icons icon-close" onclick="navToggle()">close</span>
+		</ul>
+		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
 	</div>
 </header>

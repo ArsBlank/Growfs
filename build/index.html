@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gulp Starter Project my LemonSchool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+	<div class="header__logo">
+		<img src="./img/Group.svg" alt="">
+	</div>
+	<div class="header__nav">
+		<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+		<ul class="header__ul" id="headerUl">
+			<li class="header__li"><a class="header__a" href="/">Home</a></li>
+			<li class="header__li"><a class="header__a" href="/">About</a></li>
+			<li class="header__li"><a class="header__a" href="/">Pages</a></li>
+			<li class="header__li"><a class="header__a" href="/">Services</a></li>
+			<li class="header__li"><a class="header__a" href="/">Cart 0</a></li>
+			<li class="header__li"><a class="btn__primary">Get Started</a></li>
+			<span class="material-icons icon-close" onclick="navToggle()">close</span>
+		</ul>
+		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+	</div>
+</header>
+
+    <section class="main container">
+    <div class="main__about">
+        <div class="main__box">
+        <img src="./img/title/div.svg" alt="">
+    </div>
+        <div class="main__title">Marketing solutions that grow your business.</div>
+        <div class="main__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</div>
+        <div class="main__buttons">
+<a href="/" class="btn__primary">Our services</a> 
+<a href="/" class="btn__secondary">Contact us</a>
+        </div>
+    </div>
+    <div class="main__persons">
+        <img class="person1" src="./img/title/person1.png" alt="1">
+        <img class="person2"src="./img/title/person3.png" alt="2">
+        <img class="person3"src="./img/title/person2.png" alt="3">
+        <img class="person4" src="./img/title/person4.png" alt="4">
+    </div>
+</section>
+    <main class="main">
+      <div class="template">
+        <div>Website</div>
+      </div>
+    </main>
+    <footer class="footer">
+	<div>Footer</div>
+</footer>
+
+    <script src="./js/index.bundle.js"></script>
+    <script>
+      function navToggle() {
+        document.getElementById("headerUl").classList.toggle("_active");
+        document.getElementById("headerBackdrop").classList.toggle("_active");
+      }
+    </script>
+  </body>
+</html>
